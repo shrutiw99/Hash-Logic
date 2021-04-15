@@ -1,0 +1,55 @@
+@import"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+body{
+margin:0;
+font-family:"Lucida Calligraphy";
+background-image:url(1.png);
+background-repeat:no-repeat;
+background-size:cover;
+}
+.reg-box{
+width:280px;
+position:relative;
+top=200%
+left=50%
+transform:translate(-50%,-50%);
+color:white;
+}
+.reg-box h1{
+ float:left;
+font-size:40px;
+border-bottom:4px solid #4caf50;
+margin-bottom:50px;
+padding=13px 0;
+}
+.textbox{
+width:100%;
+overflow:hidden;
+font-size:30;
+padding=8px 0;
+margin:8px 0;
+border-bottom:1px solid #4caf50;
+}
+.textbox i{
+width:26px;
+float:left;
+text-align:center;
+}
+.textbox input{
+border:none;
+outline:none;
+background:none;
+color:white;
+font-size:18px;
+width=80%;
+float:left;
+margin:10px;
+}
+.btn{
+width:100%;
+background:none;
+border:3px solid #4caf50;
+color:green;
+padding:8px;
+font-size:18px;
+font-family:"Lucida Calligraphy";
+}
