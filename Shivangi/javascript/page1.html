@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1 & bgcolor of <p></title>
+</head>
+<body>
+    <p id ='text'>JavaScript Exercises</p> 
+    <br>
+    <button id="jsstyle" onclick="js_style()">Style</button>
+
+    <!--Javascript-->
+    <script type="text/javascript">
+        function js_style() {
+            var e = document.getElementById("text");
+            e.style.fontFamily = "cursive";
+            e.style.fontSize = "24px";
+            e.style.color = "crimson";
+            e.style.backgroundColor = "lightgrey";
+        }
+    </script>
+</body>
+</html>

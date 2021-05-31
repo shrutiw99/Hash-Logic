@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Cell Content</title>
+</head>
+<body>
+    <table id="myTable" border="1">
+        <tr><td>Row1 cell1</td>
+        <td>Row1 cell2</td></tr>
+        <tr><td>Row2 cell1</td>
+        <td>Row2 cell2</td></tr>
+        <tr><td>Row3 cell1</td>
+        <td>Row3 cell2</td></tr>
+    </table><br>
+        <button onclick="changeContent()"> Change content</button>
+
+    <script>
+        function changeContent() {
+            var r = window.prompt("Insert Row Number(0 1 or 2) :");
+            var c = window.prompt("Insert Column Number(0 or 1) :");
+            var content = window.prompt("Input the Cell content");  
+            if (r != null && c != null)
+            {
+                var x = document.getElementById("myTable").rows[parseInt(r,10)].cells;
+                x[parseInt(c,10)].innerHTML = content;
+            }
+        }
+    </script>
+</body>
+</html>

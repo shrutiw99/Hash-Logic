@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jscript</title>
+    
+</head>
+<body>
+    <h2 id="h2" style="color:#8b1500;"> JavaScript - Practice</h2> <br />
+    <button onClick="textcol()">Click Me</button>
+    <br /><br />
+
+    <p>Statement1</p>
+    <p>Statement2</p>
+    <p id="stmt3">Statement3</p>
+    <p>Statement4</p>
+    <button onClick="bgcolor()">Change</button>
+    <br> <br>
+
+    <button onClick="prof()" type="submit">Profile</button>
+   <br>
+        <p id="box1" style="display:none;">My name is Shivangi.</p>
+        <p id="box2" style="display:none;"> I am 23 years old.</p>
+    <br> 
+    <input type="text" id="user">&nbsp;&nbsp;<button onClick="enter()">Enter</button>
+    <p id="box"></p>
+    <h2>Grocery List</h2><br>
+    <input type="text" id="list">&nbsp;&nbsp;<button onClick="groc()">Add</button>
+    <p id="items">Apple, cheese, milk</p>
+    <!--**********************JavaScipt**********************-->
+    <script type="text/javascript">
+        function textcol(){
+            document.getElementById("h2").style.color = "red";
+        }
+
+        function bgcolor(){
+            document.getElementById("stmt3").style.backgroundColor = "Cyan";
+        }
+
+        function enter()   {
+            var e = document.getElementById("user").value;
+            if ( e == "")
+                alert("Please Enter a Value...");
+            else
+                document.getElementById("box").innerHTML = "Hello " + e;
+        }
+
+        function prof() {
+            document.getElementById("box1").style.display = "block";
+            document.getElementById("box2").style.display = "block";
+        }
+
+        function groc(){
+            var newtxt = document.getElementById("list").value;
+            document.getElementById("items").innerText += "," + newtxt;
+        }
+    </script>
+</body>
+</html>

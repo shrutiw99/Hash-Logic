@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items in dropDown</title>
+</head>
+<body>
+    <form>
+        Select your favorite Color :
+        <select id="mySelect">
+        <option>Red</option>
+        <option>Green</option>
+        <option>Blue</option>
+        <option>White</option>
+        <option>Orange</option>
+        <option>Yellow</option>
+        <option>Purple</option>
+        </select>
+    </form><br>
+    <button onclick="getOptions()" >Output all items</button>
+
+    <script>
+        function getOptions() {
+            var op ="";
+            var d =document.getElementById("mySelect");
+            var txt = "No. of items: " + d.length;
+            for ( var i = 0; i < d.length; i++){
+                op += "\n" + d.options[i].innerText;
+            }
+            alert(txt+"\nOptions:"+op)
+        }
+    </script>
+</body>
+</html>
